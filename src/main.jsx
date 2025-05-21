@@ -9,8 +9,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <header className="menu">
-        <Link to="/">🏠 홈</Link>
-        <Link to="/wardrobe">👚 내 옷장</Link>
+        <img src="/logo.png" alt="logo" className="logo" />
+        <nav>
+          <Link to="/">🏠 홈</Link>
+          <Link to="/wardrobe">👚 내 옷장</Link>
+        </nav>
       </header>
       <Routes>
         <Route path="/" element={<Home />} />

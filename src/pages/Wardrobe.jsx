@@ -22,7 +22,7 @@ export default function Wardrobe() {
   return (
     <div className="page">
       <h2>👚 내 옷 등록</h2>
-      <form onSubmit={handleSubmit} style={{ marginBottom: "2rem" }}>
+      <form onSubmit={handleSubmit}>
         <input name="name" value={form.name} onChange={handleChange} placeholder="옷 이름" required />
         <select name="category" value={form.category} onChange={handleChange}>
           <option>상의</option>
@@ -34,9 +34,9 @@ export default function Wardrobe() {
         <input type="file" name="image" accept="image/*" onChange={handleChange} />
         <button type="submit">+ 저장</button>
       </form>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center", marginTop: "2rem" }}>
         {clothes.map((item, idx) => (
-          <div key={idx} style={{ border: "1px solid #ccc", borderRadius: "10px", padding: "1rem", width: "150px" }}>
+          <div key={idx} style={{ border: "1px solid #ccc", borderRadius: "10px", padding: "1rem", width: "180px" }}>
             {item.image && <img src={item.image} alt="옷" style={{ width: "100%", borderRadius: "8px" }} />}
             <p><strong>{item.name}</strong></p>
             <p>{item.category}</p>
