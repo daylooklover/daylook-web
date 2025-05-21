@@ -31,7 +31,13 @@ export default function Wardrobe() {
           <option>신발</option>
         </select>
         <input name="temp" value={form.temp} onChange={handleChange} placeholder="적정 온도 (예: 15~20)" required />
-        <input type="file" name="image" accept="image/*" onChange={handleChange} />
+        <input
+          type="file"
+          name="image"
+          accept="image/*"
+          capture="environment"
+          onChange={handleChange}
+        />
         <button type="submit">+ 저장</button>
       </form>
       <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center", marginTop: "2rem" }}>
