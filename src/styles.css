@@ -19,11 +19,16 @@ body {
 .menu a {
   text-decoration: none;
   font-weight: bold;
-  color: #444;
+  font-size: 1.1rem;
+  background: #ffe5d0;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: #333;
 }
 
 .menu a:hover {
-  color: #ff7f50;
+  background: #ffae70;
+  color: white;
 }
 
 .page {
