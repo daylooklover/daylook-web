@@ -1,5 +1,5 @@
 {
-  "name": "daylook-logo-ui",
+  "name": "daylook-home-ui",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
